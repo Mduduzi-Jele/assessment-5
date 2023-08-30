@@ -1,0 +1,30 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100vh;
+  border: 1px solid black;
+  background-color: var(--tertiary-color)
+}
+.navigation svg {
+  align-self: center;
+  padding-top: 1rem;
+}
+.navigation__links {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: auto 0 auto 0;
+  gap: .5rem
+}
+
+.navigation__links div {
+  padding: 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.navigation__links div:hover {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+}

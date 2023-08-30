@@ -1,0 +1,23 @@
+@import url("./assets/css/home.css");
+@import url("./assets/css/navigation.css");
+@import url("./assets/css/dashboard.css");
+@import url("./assets/css/questionnaire.css");
+@import url("./assets/css/response.css");
+@import url("./assets/css/create.css");
+@import url("./assets/css/question.css");
+@import url("./assets/css/landing.css");
+@import url("./assets/css/register.css");
+/* @import url("./assets/css/signup.css"); */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  font-weight: 400;
+  --main-color: rgb(112, 106, 97);
+  --primary-color: rgb(42, 43, 42);
+  --secondary-color: rgb(248, 244, 227);
+  --tertiary-color: rgb(255, 137, 102);
+  --h-font-size: 5rem;
+  --p-font-size: 1.5rem;
+}
+

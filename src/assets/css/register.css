@@ -1,0 +1,56 @@
+.register svg {
+    padding: 1rem ;
+    background-color: var(--tertiary-color);
+}
+
+.register {
+    display: flex;
+    height: 100vh;
+    background-color: var(--main-color);
+}
+
+.register__content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    background-color: var(--primary-color);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.register__content h1 {
+    color: var(--secondary-color);
+    font-size: var(--h-font-size);
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.register__content label {
+    color: var(--secondary-color);
+    font-size: var(--p-font-size);
+}
+
+.register__content div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 1rem 1.5rem;
+}
+
+.register__content div input {
+    height: 3rem;
+    background-color: var(--primary-color);
+    padding-left: 1.5rem;
+    color: var(--secondary-color);
+    width: 60%;
+    box-shadow: 0px 0px 10px 3px var(--secondary-color);
+}
+
+.register__content button {
+    margin-top: 1.5rem;
+    width: 98%;
+}

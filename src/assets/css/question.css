@@ -1,0 +1,27 @@
+.question {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: .5rem 0 .5rem 0;
+}
+
+.question h3 {
+    color: var(--secondary-color);
+    font-size: var(--p-font-size);
+    margin: auto 0 auto 0;
+    padding-left: 1rem;
+}
+
+.question div {
+    fill: var(--secondary-color);
+    padding-right: 1rem;
+}
+
+.question div svg {
+    fill: var(--secondary-color);
+}
+
+.question div svg:hover {
+    fill: var(--tertiary-color);
+    cursor: pointer;
+}

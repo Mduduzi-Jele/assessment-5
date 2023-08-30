@@ -1,0 +1,21 @@
+.create {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: auto;
+    gap: 2rem;
+}
+
+.create h1 {
+    color: var(--secondary-color);
+    font-size: var(--h-font-size);
+    align-self: center;
+}
+
+.create input {
+    height: 3rem;
+    background-color: var(--primary-color);
+    padding-left: 1.5rem;
+    color: var(--secondary-color);
+}
+
