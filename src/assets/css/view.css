@@ -1,0 +1,23 @@
+.view {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    height: 100vh;
+}
+
+.view__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.view__content h1 {
+    color: var(--secondary-color);
+    font-size: var(--h-font-size);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+

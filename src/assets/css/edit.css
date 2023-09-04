@@ -1,0 +1,30 @@
+.edit {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit h1 {
+    color: var(--secondary-color);
+    margin-bottom: 5rem;
+    font-size: var(--h-font-size);
+}
+
+.edit__content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+
+.edit__content input {
+    display: flex;
+    flex-direction: column;
+    height: 4rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding-left: 1rem;
+}

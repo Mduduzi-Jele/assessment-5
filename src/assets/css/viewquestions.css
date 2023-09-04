@@ -1,0 +1,18 @@
+.viewquestions {
+    display: flex;
+    background-color: var(--main-color);
+    height: 100vh;
+}
+
+.viewquestions__content p {
+    color: var(--secondary-color);
+    font-size: var(--p-font-size);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.viewquestions__content {
+    height: fit-content;
+    margin: auto;
+    width: 50%;
+}

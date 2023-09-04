@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Response = ({ question, index, response }) => {
   const [selectedOption, setSelectedOption] = useState(null);
-
+  
   const handleOptionChange = (e) => {
     setSelectedOption(e.target.value);
     response[index] = e.target.value;

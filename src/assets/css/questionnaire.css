@@ -62,3 +62,42 @@ button {
   button:active {
     transform: scale(0.9);
   }
+
+  .questionnaireList {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow:scroll;
+  }
+
+  .questionnaireList__title {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: var(--h-font-size);
+    margin-bottom: 1rem;
+  }
+
+  .questionnaireList__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  .questionnaireList__item h1 {
+    color: var(--secondary-color);
+    font-size: var(--p-font-size);
+  }
+
+  .questionnaireList__item p {
+    color: var(--secondary-color);
+    font-size: var(--p-font-size);
+  }
+
+  .one {
+    border: 1px solid black;
+  }

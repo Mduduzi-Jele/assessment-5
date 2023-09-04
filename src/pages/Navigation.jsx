@@ -24,8 +24,9 @@ const Navigation = ({ component }) => {
       </svg>
       <div className="navigation__links">
         <div onClick={() => component(1)}>Dashboard</div>
-        <div onClick={() => component(2)}>Questionnaire</div>
+        <div onClick={() => component(2)}>Questionnaires</div>
         <div onClick={() => component(3)}>Create</div>
+        <div onClick={() => component(4)}>My Questionnaires</div>
       </div>
     </div>
   );

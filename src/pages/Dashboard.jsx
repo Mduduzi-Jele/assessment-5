@@ -22,10 +22,6 @@ const Dashboard = ({ userId }) => {
             <h3>{user.questionnaire.length}</h3>
           </div>
           <div>
-            <h2>Number of Questions</h2>
-            <h3>{user.questions.length}</h3>
-          </div>
-          <div>
             <h2>Number of Agreements</h2>
             <h3>{count(user, "agree")}</h3>
           </div>
@@ -37,10 +33,6 @@ const Dashboard = ({ userId }) => {
           </div>
           <div>
             <h2>Number of Neutral</h2>
-            <h3>{count(user, "neutral")}</h3>
-          </div>
-          <div>
-            <h2>Questions per User</h2>
             <h3>{count(user, "neutral")}</h3>
           </div>
         </div>

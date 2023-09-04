@@ -1,18 +1,18 @@
 /* eslint-disable react/prop-types */
-const Question = ({ question, index, userId, setQuestion, setQuestionId }) => {
+import { useState } from "react";
+
+const Question = ({ setEdit, questions, userId, question, questionId, setQuestions, setQuestion }) => {
   const user = JSON.parse(localStorage.getItem(userId));
 
   const handleDelete = () => {
-    user.questions.splice(index, 1);
-    localStorage.setItem(userId, JSON.stringify({ ...user }));
+    questions.splice(questionId, 1)
+    setQuestions([...questions])
     console.log("deleted");
-    location.reload();
   };
 
   const handleEdit = () => {
-    setQuestion(question)
-    setQuestionId(index)
-    console.log("Edited")
+    setEdit(questionId)
+    setQuestion(questions[questionId])
   };
 
   return (

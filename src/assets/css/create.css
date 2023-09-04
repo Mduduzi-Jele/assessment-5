@@ -12,10 +12,30 @@
     align-self: center;
 }
 
+.create__next {
+    fill: white;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    margin: 0 auto 0 auto;
+    border-radius: 50%;
+}
+
 .create input {
     height: 3rem;
     background-color: var(--primary-color);
     padding-left: 1.5rem;
     color: var(--secondary-color);
+}
+
+.create__empty {
+    display: flex;
+    height: 6rem;
+    background-color: var(--primary-color);
+}
+
+.create__empty h2 {
+    color: var(--secondary-color);
+    font-size: var(--p-font-size);
+    margin: auto;
 }
 

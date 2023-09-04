@@ -1,4 +1,5 @@
 .home {
     display: flex;
-    background-color: var(--main-color)
+    background-color: var(--main-color);
+    height: 100vh;
 }
