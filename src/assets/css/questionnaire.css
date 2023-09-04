@@ -1,103 +1,117 @@
 .questionnaire {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    margin: auto;
-    line-height: var(--line-height);
-    width: 70%;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: auto;
+  line-height: var(--line-height);
+  width: 70%;
+  gap: 1.5rem;
 }
 
 .questionnaire h1 {
-   color: var(--secondary-color);
-   align-self: center;
-   font-size: var(--h-font-size);
-   padding-bottom: 2rem;
+  color: var(--secondary-color);
+  align-self: center;
+  font-size: var(--h-font-size);
+  padding-bottom: 2rem;
 }
 
 button {
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-    padding: 1em 2em;
-    border: 3px solid var(--primary-color);
-    border-radius: 2px;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: 0.3s ease all;
-    z-index: 1;
-    cursor: pointer;
-    background-color: var(--secondary-color);
-  }
-  
-  button:before {
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: '';
-    background-color: var(--tertiary-color);
-    z-index: -1;
-  }
-  
-  button:hover, button:focus {
-    color: var(--secondary-color)
-  }
-  
-  button:hover:before, button:focus:before {
-    transition: 0.5s all ease;
-    left: 0;
-    right: 0;
-    opacity: 1;
-  }
-  
-  button:active {
-    transform: scale(0.9);
-  }
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 1em 2em;
+  border: 3px solid var(--primary-color);
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
 
-  .questionnaireList {
-    display: flex;
-    width: 80%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    overflow:scroll;
-  }
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: var(--tertiary-color);
+  z-index: -1;
+}
 
-  .questionnaireList__title {
-    color: var(--secondary-color);
-    text-align: center;
-    font-size: var(--h-font-size);
-    margin-bottom: 1rem;
-  }
+button:hover,
+button:focus {
+  color: var(--secondary-color);
+}
 
-  .questionnaireList__item {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem;
-    background-color: var(--primary-color);
-    margin-bottom: 1rem;
-  }
+button:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
 
-  .questionnaireList__item h1 {
-    color: var(--secondary-color);
-    font-size: var(--p-font-size);
-  }
+button:active {
+  transform: scale(0.9);
+}
 
-  .questionnaireList__item p {
-    color: var(--secondary-color);
-    font-size: var(--p-font-size);
-  }
+.questionnaireList {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto
+}
 
-  .one {
-    border: 1px solid black;
-  }
+.questionnaireList__title {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: var(--h-font-size);
+  margin-bottom: 1rem;
+}
+
+.questionnaireList__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.questionnaireList__item h1 {
+  color: var(--secondary-color);
+  font-size: var(--p-font-size);
+}
+
+.questionnaireList__item p {
+  color: var(--secondary-color);
+  font-size: var(--p-font-size);
+}
+
+.questionnaireList__item div {
+  display: flex;
+  justify-content: space-between;
+}
+.questionnaireList__item div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.questionnaireList__item div svg {
+  fill: var(--secondary-color);
+}
+
+.questionnaireList__item div svg:hover {
+  cursor: pointer;
+  fill: var(--tertiary-color);
+}

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
-const Navigation = ({ component }) => {
+const Navigation = ({ userId, component }) => {
+  const user = JSON.parse(localStorage.getItem(userId))
   return (
     <div className="navigation">
       <svg
@@ -22,6 +23,7 @@ const Navigation = ({ component }) => {
           </g>
         </g>
       </svg>
+      <h1>Hello {user.name}</h1>
       <div className="navigation__links">
         <div onClick={() => component(1)}>Dashboard</div>
         <div onClick={() => component(2)}>Questionnaires</div>
