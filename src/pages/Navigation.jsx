@@ -23,7 +23,7 @@ const Navigation = ({ userId, component }) => {
           </g>
         </g>
       </svg>
-      <h1>Hello {user.name}</h1>
+      <h1>Hello,<br />{user.name}</h1>
       <div className="navigation__links">
         <div onClick={() => component(1)}>Dashboard</div>
         <div onClick={() => component(2)}>Questionnaires</div>

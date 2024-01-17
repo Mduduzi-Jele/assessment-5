@@ -10,9 +10,12 @@
 .navigation h1 {
   color: var(--primary-color);
   font-size: var(--p-font-size);
-  padding-left: 3rem;
+  padding-left: 1rem;
   padding-top: 3rem;
+  padding-bottom: 1.3rem;
+  font-size: 2.5rem;
 }
+
 .navigation svg {
   align-self: center;
   padding-top: 1rem;
